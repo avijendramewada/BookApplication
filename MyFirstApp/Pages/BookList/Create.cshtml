@@ -1,0 +1,53 @@
+﻿@page
+@model MyFirstApp.Pages.BookList.CreateModel
+<br/>
+
+<h2 class = "text-info">Create New  Book </h2>
+<br/>
+<div class = "border container" style="padding:30px">
+<form method="post">
+<div class ="text-Danger" asp-validation-summary="ModelOnly"></div>
+   <div class= "form-group row">
+        <div class ="col-3">
+         <label asp-for="Books.Name"></label>
+       </div>
+    <div class ="col-6">
+       <input asp-for="Books.Name" class="form-control"/>
+      </div>      
+<span asp-validation-for="Books.Name" class="text-danger"></span>
+   </div>
+                <div class= "form-group row">
+        <div class ="col-3">
+         <label asp-for="Books.Author"></label>
+       </div>
+    <div class ="col-6">
+       <input asp-for="Books.Author" class="form-control"/>
+      </div>
+      <span asp-validation-for="Books.Author" class="text-Danger"></span>
+   </div>
+           <div class= "form-group row">
+        <div class ="col-3">
+         <label asp-for="Books.ISBN"></label>
+       </div>
+    <div class ="col-6">
+       <input asp-for="Books.ISBN" class="form-control"/>
+      </div>
+      <span asp-validation-for="Books.ISBN" class="text-Danger"></span>
+
+   </div>
+     <div class= "form-group row">
+        <div class ="col-3 offset-3">
+         <input type ="submit" value="Create"  class="btn btn-primary form-control"/>
+       </div>
+    <div class ="col-3">
+       <a asp-page="Index" class=" btn btn-success form-control">Back to List</a>
+      </div>
+   </div>
+</form>
+</div>
+@section Scripts{
+ <partial name ="_ValidationScriptsPartial"/>
+ }
+
+
+ 
