@@ -21,7 +21,7 @@ function loadDataTables() {
                   Edit
                </a>
            &nbsp;
-  <a class ="btn btn-danger text-white" style="cursor:pointer; width:70px" onclick= Delete("/api/book?id=" ${data})>
+  <a class ="btn btn-danger text-white" style="cursor:pointer; width:70px" onclick= Delete("/api/book?id=" +$ {data})>
                   Delete
       </a>
 

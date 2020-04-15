@@ -5,7 +5,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Pages\BookList\Index1.cshtml.cs" />
     <Compile Remove="Pages\ValuesController1.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Pages\BookList\Index1.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -21,6 +26,10 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="NewFolder\" />
   </ItemGroup>
 
 </Project>
